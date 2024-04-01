@@ -1,0 +1,208 @@
+/* import almarai font family */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset font family and global styles */
+body{
+    font-family: "Almarai", sans-serif;
+    perspective: 700px;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+/* Start header style.................... */
+.header-first-part{
+    width: 100%;
+    height: 5vh;
+    background-color: #fce420;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.header-second-part{
+    width: 100%;
+    height: 8vh;
+    background-color: #000;
+    /* border-top: 1px solid #fff; */
+    border-bottom: 1px solid #fff;
+    overflow: auto;
+    text-align: center;
+}
+.lang , .country{
+    float: left;
+    width: 100px;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.lang{
+    border-radius: 5px 0 0 5px;
+}
+.country{
+    border-radius: 0 5px 5px 0;
+}
+.sign-in{
+    float: right;
+}
+.sign-in button{
+    width: 100px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-top: 8px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+i{
+    margin: 0 5px;
+}
+.header-third-part{
+    background-color: #000;
+    overflow: auto;
+    height: 23vh;
+}
+.header-third-part .logo img{
+    width: 90px;
+    height: 90px;
+    float: right;
+    border: 2px solid #fff;
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+    border-radius: 50%;
+    margin-top: 17px;
+}
+.header-third-part .search{
+    margin: auto;
+    width: 550px;
+}
+.search .mid-section{
+
+}
+.header-third-part .search input{
+    width: 500px; 
+    height: 35px;
+    margin-top: 48px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.search button{
+    margin-left: -2px;
+    width: 30px;
+    height: 35px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+.shop-bag{
+    margin-top: -40px;
+    color: #fff;
+    font-size: 30px;
+}
+.header-fourth-part{
+    background-color: #363636;
+    height: 7vh;
+}
+.nav .list{
+    list-style: none;
+}
+.nav .list li{
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+.nav .list li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav .list li a:hover{
+    color: #fce420;
+}
+/* End header style.................... */
+/* start card section styles................... */
+.nav-name{
+    width: 100%;
+    height: 7vh;
+    background-color: #c2c6ca;
+    padding-top: 8px;
+}
+section{
+    height: 200vh;
+    background-color: #E8E8E8;
+    padding-top: 40px;
+}
+section .content{
+    overflow: auto;
+    padding: 10px;
+}
+.card{
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+    float: left;
+    margin-bottom: 5%;
+}
+.mid-card{
+    margin: 0 5%;
+}
+.front , .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.front{
+    backface-visibility: hidden;
+    background-color: #000;
+    z-index: 1;
+}
+.back{
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front img{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px 5px 0 0;
+}
+.front .perfume-name{
+    color: #fff;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 14px;
+}
+.back .perfume-name{
+    text-transform: capitalize;
+}
+.back .info{
+    margin: 10px 0 20px 0;
+}
+.price del{
+    font-size: small;
+}
+.back .avaliable{
+    display: block;
+    margin: 40px auto;
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* End card section styles......................*/
